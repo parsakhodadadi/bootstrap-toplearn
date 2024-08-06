@@ -13,19 +13,10 @@
     <hr class="mb-3">
 
     <div class="container mb-5">
-        <button class="btn btn-secondary" data-toggle="tooltip" 
-        data-placement="top" title="Tooltip On Top">
-            Top
-        </button>
-
-        <button class="btn btn-secondary" data-toggle="tooltip" data-placement="right" title="Tooltip On Right">
-            Top
-        </button>
-        <input type="text" data-toggle="tooltip" data-placement="top" title="Please Enter" class="form-control">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed, optio harum. Accusamus, saepe sapiente. Commodi debitis
-        <a href="" id="parsa" data-toggle="tooltip" data-placement="top" title="Owner of Aaron Magazine">Parsa Khodadadi</a> 
-        consequatur vel perspiciatis rem illum eligendi? Consequatur tempora rerum necessitatibus! Totam laudantium veniam nesciunt.
-        </a>
+        <h2>Parsa Khodadadi</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus expedita ullam quidem atque minus illum eveniet, repudiandae, maxime quaerat odio, enim nihil sit asperiores ea. Et dignissimos repellat at officia.</p>
+        <button class="btn btn-info" data-toggle="popover" title="Parsa Khodadadi" data-placement="top" data-content="I am Parsa Khodadadi from Iran" data-trigger="hover">Checkup</button>
+        <input type="text" class="form-control" data-toggle="popover" title="Parsa Khodadadi" data-placement="top" data-content="I am Parsa Khodadadi from Iran">
     </div>
 </body>
 
@@ -41,9 +32,7 @@
 
 <script>
     $(function () {
-        $('[data-toggle="tooltip"]').tooltip();
-        $("#parsa").tooltip('hide');
+        $('[data-toggle="popover"]').popover();
     });
-</script>    
-
+</script>   
 </html>
